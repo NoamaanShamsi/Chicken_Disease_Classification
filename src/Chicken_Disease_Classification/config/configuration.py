@@ -1,4 +1,4 @@
-from Chicken_Disease_Classification.constants import *
+from Chicken_Disease_Classification  .constants import *
 import os
 from pathlib import Path
 from Chicken_Disease_Classification.utils.common import read_yaml, create_directories
@@ -7,6 +7,7 @@ from Chicken_Disease_Classification.entity.config_entity import (DataIngestionCo
                                                 PrepareCallbacksConfig,
                                                 TrainingConfig,
                                                 EvaluationConfig)
+
 
 
 
@@ -112,5 +113,3 @@ class ConfigurationManager:
             params_batch_size=self.params.BATCH_SIZE
         )
         return eval_config
-
-      
